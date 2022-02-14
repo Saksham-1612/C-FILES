@@ -6,7 +6,7 @@ int Binary_search(int arr[], int size, int key)
     int start = 0, end = size - 1, mid;
     while (start <= end)
     {
-        mid = (end + start) / 2;
+        mid = (end / 2) + (start / 2);
         if (arr[mid] == key)
         {
             return mid;
