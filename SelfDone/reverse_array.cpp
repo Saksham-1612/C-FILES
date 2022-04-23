@@ -1,29 +1,35 @@
 #include <iostream>
+#include <vector>
 using namespace std;
-void printArray(int brr[], int n)
+vector<int> reverse(vector<int> v)
 {
-    for (int i = 0; i < n; i++)
+    int size = v.size();
+    int s = 0;
+    int e = size - 1;
+    while (s < e)
     {
-        cout << brr[i] << " ";
+        swap(v[s], v[e]);
+        s++;
+        e--;
     }
-    cout << endl;
+    return v;
 }
-int reverse_array(int brr[], int n)
+void print(vector<int> v)
 {
-    int start = 0;
-    int end = n - 1;
-    while (start < end)
+    for (int i = 0; i < v.size(); i++)
     {
-        swap(brr[start], brr[end]);
-        start++;
-        end--;
+        cout << v.at(i) << " ";
     }
 }
 int main()
 {
-    int arr[6] = {1, 25, 34, 23, 56, 34};
-    printArray(arr, 6);
-    reverse_array(arr, 6);
-    printArray(arr, 6);
+    vector<int> v;
+    v.push_back(5);
+    v.push_back(7);
+    v.push_back(0);
+    v.push_back(9);
+    v.push_back(23);
+    vector<int> arr = reverse(v);
+    print(arr);
     return 0;
 }
