@@ -9,10 +9,6 @@ In this repository I will be uploading all my C++ code that I will be learning.
 - [@Hackerrank](https://github.com/Saksham-1612/CPP-FILES/tree/master/Hackerrank)
 - [@SelfDone](https://github.com/Saksham-1612/CPP-FILES/tree/master/SelfDone)
 
-### Hackerrank
-
-- [@Hackerrank](https://github.com/Saksham-1612/CPP-FILES/tree/master/Hackerrank)
-
 ## Authors
 
 - [@Saksham](https://www.github.com/Saksham-1612)
