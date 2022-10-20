@@ -7,9 +7,9 @@ bool isSorted(int arr[], int size)
     {
         return true;
     }
-    if (arr[0] > 1 [arr])
+    if (arr[0] > arr[1])
     {
-        return true;
+        return false;
     }
     else
     {
@@ -25,9 +25,8 @@ int main()
     {
         cin >> arr[i];
     }
-
-    // int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    // int size = sizeof(arr) / sizeof(arr[0]);
-    isSorted(arr, size) ? cout << "True" : cout << "False";
+    bool result = isSorted(arr, size);
+    cout
+        << result;
     return 0;
 }
